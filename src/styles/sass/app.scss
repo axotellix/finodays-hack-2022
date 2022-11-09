@@ -21,6 +21,7 @@
 
 // [ PAGES ]
 @import 'pages/home';
+@import 'pages/applications';
 
 
 // [ PARTIALS ]
@@ -32,3 +33,5 @@
 // [ COMPONENTS ]
 
 @import 'components/product-card';
+@import 'components/application-card';
+@import 'components/form';

@@ -7,7 +7,7 @@
 </script>
 
 
-<!-- [ TEMPLATE: poducts ] -->
+<!-- [ TEMPLATE: poducts page ] -->
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
