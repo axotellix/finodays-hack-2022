@@ -1,0 +1,25 @@
+// [ PAGE: HOME ]
+nav.page-home {
+    gap: 20px;
+    flex-wrap: wrap;
+    @include flex-align(flex-start, flex-start);
+
+    a {
+        width: 320px;
+        aspect-ratio: 5/3;
+        padding: 30px;
+        background: $dark-l;
+        gap: 15px;
+        font-size: 1.8rem;
+        @include flex-align(def, def, column);
+
+        &:hover {
+            background: lighten($dark-l, 3%);
+        }
+    }
+    a .ico {
+        width: 50px; height: 50px;
+        fill: $grey;
+    }
+
+}

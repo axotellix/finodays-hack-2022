@@ -1,0 +1,42 @@
+
+// [ TYPOGRAPHY ]
+h1 { font-size: 2.5rem; margin-bottom: 40px;}
+h2 { font-size: 2.2rem; }
+h3 { font-size: 2rem;   }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }
+
+// [ SCROLLBAR ]
+::-webkit-scrollbar {
+    width: 7px;
+    cursor: alias;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lighten($dark, 10%);
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: lighten($dark, 7%);
+    transition: background 0.25s ease-in;
+}
+
+::-webkit-scrollbar-track {
+    border: none;
+    background: transparent;
+}
+
+
+// [ PLACHEOLDERS ]
+::placeholder {
+    color: rgba(#fff, 0.25);
+}
+-moz-::placeholder {
+    color: rgba(#fff, 0.25);
+}
+-webkit-::placeholder {
+    color: rgba(#fff, 0.25);
+}
+  

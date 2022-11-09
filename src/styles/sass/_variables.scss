@@ -1,0 +1,49 @@
+
+// [ COLOURS ]:
+
+$dark:          #1C2431;
+$dark-l:        #222B3A;
+$white:         #EEF5F6;
+$grey:          #3A485E;
+$grey-txt:      #4C5A70;
+$purple:        #5069EC;
+$red:           #F1253D;
+$green:         #17BC9E;
+$blue:          #2C69F4;
+$yellow:        #F19F25;
+
+
+// [ FONTS ]:
+$f-size: 10px;
+$f-body:    'Mulish', sans-serif;
+$f-decor:   'Coolvetica', sans-serif;
+$font: $f-size $f-body;
+$f-lite:        300;
+$f-normal:      400;
+$f-medium:      500;
+$f-semibold:    600;
+$f-bold:        700;
+$f-extra-bold:  800;
+$f-black:       900;
+
+
+// [ SIZES ]:
+
+$mb: 576px;
+$sm: 768px;
+$md: 900px;
+$lg: 1200px;
+$w: $lg;
+
+
+// [ MARGINS ]:
+
+:root {
+
+    --m-tiny:   20px;
+    --m-small:  50px;
+    --m-medium: 70px;
+    --m-big:    100px;
+    --m-large:  125px;
+
+}

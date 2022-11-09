@@ -1,0 +1,34 @@
+
+// [ FONTS ]
+
+
+// [ PRESETS ]
+@import 'Normalize.css';
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'utils';
+@import 'customs';
+
+
+// [ INTERFACE ]
+@import 'interface';
+
+
+// [ GENERAL ]
+@import 'styles';
+
+
+// [ PAGES ]
+@import 'pages/home';
+
+
+// [ PARTIALS ]
+@import 'partials/main';
+@import 'partials/header';
+@import 'partials/sidebar';
+
+
+// [ COMPONENTS ]
+
+@import 'components/product-card';

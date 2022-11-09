@@ -1,0 +1,129 @@
+
+// [ UTILITY CLASSES ]
+//description: collection of classes for styling elements directly in HTML
+
+
+// [ MARGINS ]
+// margin: -100 to 100
+$margin_i: -100;
+@while $margin_i <= 100 {
+    .m-#{$margin_i} { margin: #{$margin_i}px !important }
+    $margin_i: $margin_i + 5;
+}
+.m-0 { margin: 0px !important } 
+.m-1 { margin: 1px !important } 
+.m-2 { margin: 2px !important } 
+.m-3 { margin: 3px !important } 
+.m-4 { margin: 4px !important } 
+.m-5 { margin: 5px !important } 
+
+// margin-top: -100 to 100
+$margin_i: -100;
+@while $margin_i <= 100 {
+    .mt-#{$margin_i} { margin-top: #{$margin_i}px !important }
+    $margin_i: $margin_i + 5;
+}
+.mt-1 { margin-top: 1px !important } 
+.mt-2 { margin-top: 2px !important } 
+.mt-3 { margin-top: 3px !important } 
+.mt-4 { margin-top: 4px !important } 
+.mt-5 { margin-top: 5px !important } 
+
+// margin-left: -100 to 100
+$margin_i: -100;
+@while $margin_i <= 100 {
+    .ml-#{$margin_i} { margin-left: #{$margin_i}px !important }
+    $margin_i: $margin_i + 5;
+}
+.ml-1 { margin-left: 1px !important } 
+.ml-2 { margin-left: 2px !important } 
+.ml-3 { margin-left: 3px !important } 
+.ml-4 { margin-left: 4px !important } 
+.ml-5 { margin-left: 5px !important } 
+
+// margin-right: -100 to 100
+$margin_i: -100;
+@while $margin_i <= 100 {
+    .mr-#{$margin_i} { margin-right: #{$margin_i}px !important }
+    $margin_i: $margin_i + 5;
+}
+.mr-1 { margin-right: 1px !important } 
+.mr-2 { margin-right: 2px !important } 
+.mr-3 { margin-right: 3px !important } 
+.mr-4 { margin-right: 4px !important } 
+.mr-5 { margin-right: 5px !important } 
+
+
+// margin-bottom: -100 to 100
+$margin_i: -100;
+@while $margin_i <= 100 {
+    .mb-#{$margin_i} { margin-bottom: #{$margin_i}px !important }
+    $margin_i: $margin_i + 5;
+}
+.mb-1 { margin-bottom: 1px !important } 
+.mb-2 { margin-bottom: 2px !important } 
+.mb-3 { margin-bottom: 3px !important } 
+.mb-4 { margin-bottom: 4px !important } 
+.mb-5 { margin-bottom: 5px !important } 
+
+
+
+// [ PADDINGS ]
+.pad-y-10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+
+// [ ALIGNMENT ]
+// margin align: self
+.center-x { margin-left: auto; margin-right: auto }
+
+// flex: content
+.flex { display: flex }
+// flex > direction
+.flex-row {
+    flex-direction: row !important;
+} 
+.flex-col {
+    flex-direction: column !important;
+} 
+// flex > direction + alignment
+.flex-row-center {
+    flex-direction: row !important;
+    @include flex-align(center, center);
+} 
+.flex-col-center-top {
+    flex-direction: column !important;
+    @include flex-align(flex-start, center);
+} 
+
+
+// [ SIZING ]
+// width
+.w-100 { width: 100% !important }
+.w-80  { width: 80% !important  }
+.w-50  { width: 50% !important  }
+.w-40  { width: 40% !important  }
+.w-30  { width: 30% !important  }
+
+// icons sizes
+@for $i from 15 through 25 {
+    .ico-#{$i} {
+        max-width: #{$i}px !important;
+    }
+} 
+
+// fonts sizes
+.widen-font {
+    transform: scaleX(1.2);     // crutch: to visually widen 'Syne' font with weight less than 600
+    transform-origin: left top;
+}
+  
+  
+// [ VISIBILITY ]
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+  

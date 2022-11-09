@@ -1,0 +1,27 @@
+// [ COMPONENT: HEADER ]
+header {
+    height: 70px;
+    background: $dark-l;
+    padding: 0 50px;
+    box-shadow: 0 4px 12px 0 rgba(#000, 0.07);
+    z-index: 10;
+    @include flex-align(space-between);
+}
+header .user-info {
+    @include flex-align;
+}
+header .user-info img {
+    width: 50px; height: 50px;
+    margin-right: 20px;
+    background: $dark;
+    border-radius: 50%;
+}
+header .user-info .user-name {
+    font-size: 1.8rem;
+    margin: 0;
+}
+header .user-info .user-role {
+    margin: 0;
+    font-size: 1.5rem;
+    color: $grey-txt;
+}

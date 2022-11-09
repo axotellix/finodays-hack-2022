@@ -1,0 +1,32 @@
+// [ COMPONENT: Product Card ]
+.product-card {
+    width: 100%;
+    padding: 10px 30px;
+    background: $dark-l;
+    font-size: 1.8rem;
+    margin: 17px 0;
+    cursor: pointer;
+    transition: background 0.25s;
+    @include flex-align(space-between, center);
+
+    &:hover {
+        background: lighten($dark-l, 3%);
+    }
+
+    .controls {
+        gap: 10px;
+        @include flex-align;
+
+        .ico {
+            width: 22px; height: 22px;
+            padding: 10px;
+            box-sizing: content-box;
+            transition: background 0.25;
+            border-
+
+            &:hover {
+                background: $dark-l;
+            }
+        }
+    }
+}

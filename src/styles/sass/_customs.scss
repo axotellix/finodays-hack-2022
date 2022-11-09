@@ -1,0 +1,61 @@
+
+// [ CUSTOMISING CLASSES ]
+//description: utility classes ONLY for a project
+
+// [ SHADOWS ]
+.shadow-purple {
+    box-shadow: 0 0 12px 0 rgba($purple, 0.25);
+}
+.shadow-red {
+    box-shadow: 0 0 12px 0 rgba($red, 0.25);
+}
+.shadow-dark {
+    box-shadow: 0 0 12px 0 rgba(#000, 0.5);
+}
+
+// [ COLOURS ]
+.txt-dark {
+    color: $grey-txt;
+}
+.bg-red {
+    background: $red;
+}
+.bg-yellow {
+    background: $yellow;
+}
+.bg-blue {
+    background: $blue;
+}
+.ico-red {
+    fill: $red;
+}
+.ico-yellow {
+    fill: $yellow;
+}
+.ico-blue {
+    fill: $blue;
+}
+
+// [ BUTTONS ]
+.CTA {
+    background: $purple;
+    color: $white;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-size: 2rem;
+    font-weight: $f-semibold;
+    @extend .shadow-purple;
+
+    &:hover {
+        background: lighten($purple, 3%);
+    }
+}
+.CTA-red {
+    @extend .CTA;
+    background: $red;
+    @extend .shadow-red;
+
+    &:hover {
+        background: lighten($red, 3%);
+    }
+}

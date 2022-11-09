@@ -1,0 +1,33 @@
+
+// [ GENERAL ]
+html { font: $font; font-weight: $f-normal; }
+body {
+    background: $dark;
+    color: $white;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+section {
+    width: 100%;
+    padding: 0 10%;
+}
+
+a { 
+    color: $white;
+}
+
+.ico {
+    width: 25px; height: 25px;
+}
+
+
+// REMOVE: footer
+footer {
+    margin-top: 100px;
+    height: 70px;
+    @include flex-align;
+    font-size: 1.5rem;
+}
