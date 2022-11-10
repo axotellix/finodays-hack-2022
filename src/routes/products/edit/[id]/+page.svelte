@@ -10,7 +10,6 @@
 
 	// [ PRESETS ]
 	let new_form_id_max = 1
-	let criteria_modal_open = false
 
 
 	// [ FUNCTIONS ]
@@ -26,15 +25,6 @@
 		add_form.classList.remove('hidden')
 		add_done.classList.remove('hidden')
 	}
-
-	//@ open > Add Criteria Modal
-	const addCriteriaModal = () => {
-		criteria_modal_open = true
-	} 
-	//@ close > Add Criteria Modal
-	const closeModal = () => {
-		criteria_modal_open = false
-	} 
 
 	//@ close > add new field form 
 	const closeForm = () => {
@@ -107,9 +97,9 @@
 </script>
 
 
-<!-- [ TEMPLATE: poducts page ] -->
+<!-- [ TEMPLATE: edit product ] -->
 <svelte:head>
-	<title>Создание продукта</title>
+	<title>Редактирование продукта</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -136,46 +126,6 @@
 	<input type="text" name = 'product-name' placeholder = 'Кредит для инвестиционных целей ...'>
 
 	<!-- criterias -->
-	<!-- MODAL -->
-	{#if criteria_modal_open}
-	<div class="modal-backdrop" on:click|self={ closeModal }>
-		<div class="modal">
-			<form action="">
-				<h2>Создание нового критерия</h2>
-				<div class = 'form-row new-field-template'>
-					<!-- field -->
-					<div>
-						<label class = 'new-criteria-name-label' for="income">Название критерия</label>
-						<input type="text" name = 'new-criteria-name-value' class = 'w-100' placeholder = 'Доля заемных средств в пассивах организации ...'>
-					</div>
-					<!-- field -->
-					<div>
-						<label class = 'new-criteria-operator-label' for="income">Оператор</label>
-						<div class="select short new-criteria-operator-value">
-							<select name="applications-filter" id="applications-filter">
-								<option value="0" selected>*</option>
-								<option value="1">&divide;</option>
-								<option value="2">+</option>
-								<option value="3">-</option>
-								<option value="4">&lt</option>
-								<option value="5">&gt</option>
-								<option value="6">=</option>
-							</select>
-						</div>
-					</div>
-					<!-- field -->
-					<div>
-						<label class = 'new-criteria-number-label' for="income">Число</label>
-						<input class = 'new-criteria-number-value w-100'  type="text" name = 'income' placeholder = '5 ...'>
-					</div>
-
-					<div class = 'save-btn'>
-						<button class="CTA">сохранить</button>
-					</div>
-			</form>
-		</div>
-	</div>
-	{/if}
 	<h2>
 		СТОП-ФАКТОРЫ
 		<p class = 'subtitle'>(для расчета рейтинга)</p>
@@ -187,7 +137,7 @@
 				<a class = 'CTA-red small w-100'>удалить</a>
 			</div>
 		{/each}
-		<div class="criteria-card-create" on:click={ addCriteriaModal }>
+		<div class="criteria-card-create">
 			<p class = 'icon-add'>+</p>
 			<p>добавить критерий</p>
 		</div>

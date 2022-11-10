@@ -9,7 +9,7 @@
 
 <!-- [ TEMPLATE: applications page ] -->
 <svelte:head>
-	<title>Home</title>
+	<title>Заявки</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -27,7 +27,7 @@
 </form>
 
 {#each Array(4) as product}
-    <a href = '' class="application-card">
+    <a href = '/applications/application/1' class="application-card">
         <div class="application-info">
             <p class = 'date'>09.11.2022</p>
             <div class="break">

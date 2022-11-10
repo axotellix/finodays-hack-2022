@@ -21,7 +21,7 @@
     <a href = '' class="product-card">
 		Название продукта
 		<div class="controls">
-			<Ico type = 'edit' styles = 'ico-blue' />
+			<a href = '/products/edit/1'><Ico type = 'edit' styles = 'ico-blue' /></a>
 			<Ico type = 'archive' styles = 'ico-yellow' />
 		</div>
 	</a>

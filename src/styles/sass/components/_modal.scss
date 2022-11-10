@@ -1,0 +1,19 @@
+// [ COMPONENT: Modal ]
+.modal-backdrop {
+    background: rgba($dark-l, 0.9);
+    z-index: 9999;
+    @include stretch(fixed);
+    @include flex-align;
+}
+.modal {
+    width: 70%; min-height: 100px;
+    padding: 50px;
+    background: $dark;
+}
+.modal .form-row {
+    flex-wrap: wrap;
+}
+.save-btn {
+    width: 100%;
+    margin-top: 20px;
+}

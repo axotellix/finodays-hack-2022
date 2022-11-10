@@ -33,3 +33,28 @@
         font-weight: $f-medium;
     }
 }
+
+.application-card-fullscreen {
+    padding: 40px;
+    @extend .application-card;
+    @include flex-align(flex-start, flex-start, column);
+
+    .application-info {
+        width: 100%;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid $dark;
+        gap: 0px;
+        @include flex-align(flex-start, flex-start, column);
+
+        .date {
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 2.5rem;
+        }
+        .client {
+            font-size: 2rem;
+        }
+    }
+}

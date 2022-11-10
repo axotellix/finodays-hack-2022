@@ -1565,7 +1565,7 @@ aside nav a.active {
   background: #222B3A;
 }
 
-.application-card {
+.application-card, .application-card-fullscreen {
   width: 100%;
   padding: 20px 30px;
   background: #222B3A;
@@ -1586,7 +1586,7 @@ aside nav a.active {
       -ms-flex-align: center;
           align-items: center;
 }
-.application-card:hover {
+.application-card:hover, .application-card-fullscreen:hover {
   background: #283244;
 }
 
@@ -1621,6 +1621,56 @@ aside nav a.active {
   font-size: 1.6rem;
   color: #4C5A70;
   font-weight: 500;
+}
+
+.application-card-fullscreen {
+  padding: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.application-card-fullscreen .application-info {
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #1C2431;
+  gap: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.application-card-fullscreen .application-info .date {
+  margin-bottom: 20px;
+}
+.application-card-fullscreen .application-info .title {
+  font-size: 2.5rem;
+}
+.application-card-fullscreen .application-info .client {
+  font-size: 2rem;
 }
 
 form {
@@ -1918,4 +1968,42 @@ form.loan-period {
 }
 .term-card input {
   width: 100%;
+}
+
+.modal-backdrop {
+  background: rgba(34, 43, 58, 0.9);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal {
+  width: 70%;
+  min-height: 100px;
+  padding: 50px;
+  background: #1C2431;
+}
+
+.modal .form-row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.save-btn {
+  width: 100%;
+  margin-top: 20px;
 }
