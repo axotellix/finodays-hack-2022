@@ -143,3 +143,14 @@ form.loan-period {
     //     width: 300px !important;
     // }
 }
+
+.client-form {
+    width: 100%;
+    gap: 30px;
+    @include flex-align(flex-start, flex-start, column);
+
+    .row {
+        width: 100%;
+    }
+    button { margin-top: 25px; }
+}

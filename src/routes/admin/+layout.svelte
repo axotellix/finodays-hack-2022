@@ -1,6 +1,7 @@
 <!-- [ SCRIPT ] -->
 <script>
-	// code ...
+	import { page } from '$app/stores'
+	$: route = $page.route.id
 </script>
 
 
@@ -20,7 +21,7 @@
 		</div>
 
 		<!-- button: logout -->
-		<button class="CTA-red pad-y-10">выйти</button>
+		<a href = '/client' class="CTA-red pad-y-10">выйти</a>
 
 	</header>
 
@@ -28,10 +29,10 @@
 	<aside>
 		<h3 class="menu-title">МЕНЮ</h3>
 		<nav>
-			<a href="/admin" class = 'active'>Главная</a>
-			<a href="/admin/products">Продукты</a>
-			<a href="/admin/applications">Заявки</a>
-			<a href="/admin/statistics">Отчеты</a>
+			<a href="/admin" class:active={ route === '/admin' }>Главная</a>
+			<a href="/admin/products" class:active={ route.includes('/admin/products') }>Продукты</a>
+			<a href="/admin/applications" class:active={ route.includes('/admin/applications') }>Заявки</a>
+			<a href="/admin/statistics" class:active={ route.includes('/admin/statistics') }>Отчеты</a>
 		</nav>
 	</aside>
 

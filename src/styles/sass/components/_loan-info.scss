@@ -1,0 +1,13 @@
+// [ COMPONENT: Loan Info ]
+.loan-info {
+    gap: 20px;
+    @include flex-align(flex-start);
+
+    .loan-info-card {
+        background: $dark-l;
+        padding: 40px;
+
+        .value { font-size: 2rem; font-weight: $f-semibold; text-align: center; margin: 0; margin-bottom: 20px; }
+        .title { font-size: 1.7rem; color: $grey-txt; text-align: center; margin: 0; }
+    }
+}
