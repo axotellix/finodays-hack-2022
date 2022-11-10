@@ -175,7 +175,7 @@
 					additionalProp1: '* 5',
 				}
 			}
-			form_data.add('data', JSON.stringify(send))
+			form_data.append('data', JSON.stringify(send))
 
 			
 			// console.log(product);
