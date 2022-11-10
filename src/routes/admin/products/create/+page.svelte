@@ -164,18 +164,31 @@
 				console.log(data.get(`new-field-${i}-name`));
 				product.conditions.limit.criterias.push(row)
 			}
+
+			let form_data = new FormData()
+			let send = { 
+				name: product.name,
+				minDept: product.conditions.percent.value,
+				minDivorce: product.conditions.percent.rating,
+				maxPeriod: product.conditions.period.max,
+				metrics: {
+					additionalProp1: '* 5',
+				}
+			}
+			form_data.add('data', JSON.stringify(send))
+
 			
 			// console.log(product);
 			// console.log(data.get('new-field-1-number'));
 
-			// fetch('/endpoint', {
-			// 	method: 'POST',
-			// 	body: form_data
-			// }).then(() => {
-			// 	console.log('uploaded!')
-			// }).catch(() => {
-			// 	console.log('failed to upload')
-			// })
+			fetch('http://localhost:7110/api/strategy', {
+				method: 'POST',
+				body: form_data
+			}).then(() => {
+				console.log('uploaded!')
+			}).catch(() => {
+				console.log('failed to upload')
+			})
 
 		})
  	})
