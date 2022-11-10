@@ -27,7 +27,7 @@
 </form>
 
 {#each Array(4) as product}
-    <a href = '/applications/application/1' class="application-card">
+    <a href = '/admin/applications/application/1' class="application-card">
         <div class="application-info">
             <p class = 'date'>09.11.2022</p>
             <div class="break">

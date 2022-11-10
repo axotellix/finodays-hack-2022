@@ -15,13 +15,13 @@
 
 <h1>ПРОДУКТЫ</h1>
 
-<a href = '/products/create' class="CTA mb-20">+ создать продукт</a>
+<a href = '/admin/products/create' class="CTA mb-20">+ создать продукт</a>
 
 {#each Array(4) as product}
     <a href = '' class="product-card">
 		Название продукта
 		<div class="controls">
-			<a href = '/products/edit/1'><Ico type = 'edit' styles = 'ico-blue' /></a>
+			<a href = '/admin/products/edit/1'><Ico type = 'edit' styles = 'ico-blue' /></a>
 			<Ico type = 'archive' styles = 'ico-yellow' />
 		</div>
 	</a>

@@ -28,10 +28,10 @@
 	<aside>
 		<h3 class="menu-title">МЕНЮ</h3>
 		<nav>
-			<a href="/" class = 'active'>Главная</a>
-			<a href="/products">Продукты</a>
-			<a href="/applications">Заявки</a>
-			<a href="/statistics">Отчеты</a>
+			<a href="/admin" class = 'active'>Главная</a>
+			<a href="/admin/products">Продукты</a>
+			<a href="/admin/applications">Заявки</a>
+			<a href="/admin/statistics">Отчеты</a>
 		</nav>
 	</aside>
 

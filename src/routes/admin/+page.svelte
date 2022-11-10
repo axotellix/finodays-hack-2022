@@ -15,7 +15,7 @@
 
 <h1>ГЛАВНАЯ</h1>
 <nav class = 'page-home'>
-	<a href="/products"><Ico type="product" />Продукты</a>
-	<a href="/applications"><Ico type="application" />Заявки</a>
-	<a href="/statistics"><Ico type="statistics" />Отчеты</a>
+	<a href="/admin/products"><Ico type="product" />Продукты</a>
+	<a href="/admin/applications"><Ico type="application" />Заявки</a>
+	<a href="/admin/statistics"><Ico type="statistics" />Отчеты</a>
 </nav>
