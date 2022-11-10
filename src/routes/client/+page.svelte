@@ -42,5 +42,5 @@
 		<input type="text" name = 'inn' placeholder = '36 ...'>
 	</div>
 
-	<button class = 'CTA'>отправить</button>
+	<a href='/client/result' class = 'CTA'>отправить</a>
 </form>
