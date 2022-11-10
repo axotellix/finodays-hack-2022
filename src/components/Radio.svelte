@@ -1,7 +1,11 @@
 <!-- [ SCRIPT ] -->
 <script>
 
+    import { onMount } from 'svelte';
+    
 	export let checked = false
+	export let name = false
+	export let value = false
 
     // [ FUNCTIONS ]
     const setChecked = ( e ) => {
@@ -18,12 +22,16 @@
         radio.parentNode.classList.add('radio-checked')
     }
 
+    onMount(() => {
+		document.querySelector('.radio-checked').querySelector('input[type=radio]').setAttribute('checked', '')
+ 	})
+
 </script>
 
 
 <!-- [ COMPONENT: Radio Button ] -->
 <div class="radio-btn" class:radio-checked={ checked } on:click|stopPropagation={ setChecked }>
-    <input type="radio" checked />
+    <input type="radio" {name} {value} />
     <div class = 'radio-state'></div>
     <p class = 'title'><slot></slot></p>
 </div>

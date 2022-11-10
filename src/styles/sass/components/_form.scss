@@ -129,12 +129,12 @@ input {
     }
 }
 
-form.limit {
+.limit {
     gap: 20px;
     flex-wrap: wrap;
     @include flex-align(flex-start, flex-start);
 }
-form.loan-period {
+.loan-period {
     gap: 20px;
     flex-wrap: wrap;
     @include flex-align(flex-start, flex-start);

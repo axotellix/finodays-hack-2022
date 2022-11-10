@@ -1863,7 +1863,7 @@ input:focus {
           transform: translateX(-50%) translateY(-50%);
 }
 
-form.limit {
+.limit {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1880,7 +1880,7 @@ form.limit {
           align-items: flex-start;
 }
 
-form.loan-period {
+.loan-period {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
