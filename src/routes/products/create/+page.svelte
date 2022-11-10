@@ -106,6 +106,20 @@
 <h1>СОЗДАНИЕ ПРОДУКТА</h1>
 
 <form action="">
+	<!-- template selection -->
+	<h2>
+		СОЗДАТЬ ИЗ ШАБЛОНА
+		<p class = 'subtitle'>выберите готовый шаблон продукта - данные заполнятся автоматически</p>
+	</h2>
+	<div class="select short new-field-operator-value">
+		<select name="applications-filter" id="applications-filter">
+			<option value="0" selected>настроить вручную</option>
+			<option value="1">кредит для молодежи</option>
+			<option value="2">кредит для детей</option>
+		</select>
+	</div>
+
+
 	<!-- product name -->
 	<h2>О ПРОДУКТЕ</h2>
 	<label for="product-name">Название продукта</label>
