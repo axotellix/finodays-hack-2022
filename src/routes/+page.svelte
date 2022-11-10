@@ -9,7 +9,7 @@
 
 <!-- [ TEMPLATE: homepage ] -->
 <svelte:head>
-	<title>Home</title>
+	<title>Главная</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 

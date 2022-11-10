@@ -9,13 +9,13 @@
 
 <!-- [ TEMPLATE: poducts page ] -->
 <svelte:head>
-	<title>Home</title>
+	<title>Продукты</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <h1>ПРОДУКТЫ</h1>
 
-<button class="CTA mb-20">+ создать продукт</button>
+<a href = '/products/create' class="CTA mb-20">+ создать продукт</a>
 
 {#each Array(4) as product}
     <a href = '' class="product-card">

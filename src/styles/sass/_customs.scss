@@ -38,6 +38,7 @@
 
 // [ BUTTONS ]
 .CTA {
+    width: max-content;
     background: $purple;
     color: $white;
     padding: 13px 28px;
@@ -48,6 +49,11 @@
 
     &:hover {
         background: lighten($purple, 3%);
+    }
+
+    &.small {
+        padding: 7px 28px;
+        font-size: 1.8rem;
     }
 }
 .CTA-red {

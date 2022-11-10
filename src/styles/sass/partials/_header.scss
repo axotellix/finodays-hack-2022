@@ -1,5 +1,7 @@
 // [ COMPONENT: HEADER ]
 header {
+    position: sticky;
+    top: 0;
     height: 70px;
     background: $dark-l;
     padding: 0 50px;

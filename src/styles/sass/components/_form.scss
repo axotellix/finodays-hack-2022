@@ -24,3 +24,88 @@ select {
         background: $grey;
     }
 }
+
+label { 
+    display: block;
+    margin-left: 5px; margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+input { 
+    width: 50%; height: 55px;
+    padding: 10px 25px;
+    border: 3px solid $grey;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    background: transparent;
+    outline: none;
+    color: $white;
+    transition: border-color 0.25s;
+
+    &:focus {
+        border-color: lighten($grey, 6%);
+    }
+}
+
+.radio-group {
+    gap: 20px;
+    @include flex-align(flext-start, flex-start);
+    
+
+    input[type="radio"] {
+        position: relative;
+        width: 0 !important; height: 0 !important;
+        visibility: hidden;
+    }
+    .radio-state {
+        position: relative;
+        width: 18px; height: 18px;
+        margin-right: 15px !important;
+        border-radius: 50%;
+        background: $dark-l;
+
+    }
+    .radio-btn {
+        max-width: max-content;
+        padding: 12px 20px;
+        background: lighten($grey, 10%);
+        border-radius: 5px; 
+        font-size: 1.8rem;
+        cursor: default;
+        transition: background 0.25s;
+        @include flex-align;
+
+        &:hover {
+            background: lighten($grey, 14%);
+        }
+
+        * { margin: 0; } 
+    }
+    .radio-checked {
+        background: $purple;
+
+        &:hover {
+            background: lighten($purple, 2%);
+        }
+
+        .radio-state {
+            background: rgba($dark-l, 0.5);
+        }
+        .radio-state::before {
+            content: "";
+            display: block;
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: $white;
+            @include align;
+        }
+    }
+}
+
+.loan-period {
+    gap: 20px;
+    @include flex-align(flex-start, flex-start);
+
+    input {
+        width: 300px !important;
+    }
+}
